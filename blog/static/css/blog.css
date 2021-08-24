@@ -60,6 +60,7 @@ nav {
 }
 
 .logo a {
+    position: relative;
     color: #000;
     font-family: Creato;
     text-transform: uppercase;
