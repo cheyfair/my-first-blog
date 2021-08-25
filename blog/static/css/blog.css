@@ -287,19 +287,6 @@ h4 {
     font-family: Made;
 }
 
-.content-container {
-    margin-top: 50px;
-    margin-left: 150px;
-}
-
-@media screen and (max-width: 600px) {
-    .content-container {
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-}
-
 .title {
     text-align: center;
 }
