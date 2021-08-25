@@ -88,6 +88,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
+    position: relative;
     display: inline-block;
     outline: none;
     color: #242124;
@@ -180,6 +181,7 @@ nav ul li a:hover::after {
     }
 
     .nav-wrapper ul li a {
+        position: relative;
         padding: 10px 24px;
         opacity: 0;
         color: #242124;
@@ -207,7 +209,7 @@ nav ul li a:hover::after {
     }
 
     .nav-wrapper ul li a:hover::after {
-        width: 100%;
+        width: 95%;
     }
 
     .nav-btn {
