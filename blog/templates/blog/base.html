@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <header class="page-header">
+        <header class="header">
             <div class="container">
                 <nav>
                     <input type="checkbox" id="nav" class="hidden">
@@ -34,15 +34,26 @@
             </div>
         </header>
             <main class="content-container">
-                <div class="row">
-                    <div class="col">
+
                         {% block content %}
                             
-                            <h2 class="title">Homepage</h2>
+                            <section class="base-section space">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xl-8 offset-xl-2">
+                                            <div class="home-title">
+                                                <h2>Hi, I'm Cheyánne</h2>
+                                            </div>
+                                            <div id="home">
+                                                <p>An aspiring Web Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                             
                         {% endblock %}
-                    </div>
-                </div>
+
             </main>
     </body>
 </html>
