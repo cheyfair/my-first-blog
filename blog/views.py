@@ -28,7 +28,7 @@ def about(request):
 
 def cv(request):
     post = Post
-    return render(request, 'blog/cv.html', {'post': post})
+    return render(request, 'blog/skills.html', {'post': post})
 
 def portfolio(request):
     post = Post
