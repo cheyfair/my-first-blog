@@ -1,5 +1,7 @@
 {% extends 'blog/base.html' %}
 
+{% load static %}
+
 {% block content %}
 
     <section class="about section" id="about">
@@ -12,7 +14,7 @@
                 <span class="section__subtitle">My introduction</span>
                 
                 <div class="about__img">
-                    <img src="assets/self.jpg" alt="">
+                    <img src="{% static 'images/self.jpg' %}" alt="Photo of Cheyánne Fairclough">
                 </div>
                 
                 <div class="about__data">

@@ -344,10 +344,14 @@ img {
 }
 
 .about__img {
-    align-self: center;
-    border-radius: 0.5rem;
+    display: inline-block;
     justify-self: center;
+    margin-bottom: var(--mb-4);
+}
+
+.about__img img {
     width: 200px;
+    border-radius: 0.5rem;
 }
 
 .about__info {
