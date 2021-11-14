@@ -44,18 +44,24 @@ sr.reveal('.button', {delay: 200})
 sr.reveal('.home__img', {delay: 400})
 sr.reveal('.home__social-icon', {interval: 200})
 
-
-
 /*SCROLL ABOUT*/
-
-
 /*SCROLL SKILLS*/
-
-
 /*ACCORDION SKILLS*/
+var skillsHeader = document.getElementsByClassName('skills__header');
+var i;
 
+for (i =0; i < skillsHeader.length; i++) {
+    skillsHeader[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+
+        var skillsList = this.nextElementSibling;
+        if (skillsList.style.display === 'grid') {
+            skillsList.style.display = 'none';
+        } else {
+            skillsList.style.display = 'grid';
+        }
+    });
+}
 
 /*SCROLL WORK*/
-
-
 /*SCROLL CONTACT*/

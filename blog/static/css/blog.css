@@ -109,6 +109,10 @@ img {
     display: block;
 }
 
+::placeholder {
+    font-size: var(--smaller-font-size);
+}
+
 /*===== CLASS CSS =====*/
 .section-title {
     position: relative;
@@ -178,6 +182,15 @@ img {
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
     padding: 0 1rem;
+}
+
+.copyright {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.cf {
+    font-weight: var(--font-semi-bold);
 }
 
 /*===== NAV =====*/
@@ -460,18 +473,52 @@ img {
     width: 25%;
 }
 
-.skills__close .skills__list {
+.skills__list {
+    display: none;
     height: 0;
     overflow: hidden;
 }
 
-.skills__open .skills__list {
+.skills__list {
     height: max-content;
     margin-bottom: 2.5rem;
 }
 
-.skills__open .skills__arrow {
+.active .skills__arrow {
     transform: rotate(-180deg);
+}
+
+/* ===== QUALIFICATIONS ===== */
+.qualification__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.qualification__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.qualification__button:hover {
+    color: var(--first-color);
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: 0.25rem;
+}
+
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
 }
 
 /* ===== PORTFOLIO ===== */
@@ -543,6 +590,7 @@ img {
     cursor: pointer;
     margin-left: auto;
 }
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: #FFBCD8;
