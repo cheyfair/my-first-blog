@@ -147,6 +147,10 @@ img {
     padding-bottom: 2rem;
 }
 
+.section__title {
+    text-align: center;
+}
+
 .section_skills {
     padding: 2rem 0 4rem;
 }
@@ -473,6 +477,10 @@ img {
     width: 25%;
 }
 
+.skills__shopify {
+    width: 60%;
+}
+
 .skills__list {
     display: none;
     height: 0;
@@ -517,8 +525,43 @@ img {
 }
 
 .qualification__title {
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+}
+
+.qualification__subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: 1rem;
+}
+
+.qualification__calendar {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+    display: none;
+}
+
+.qualification__active[data-content] {
+    display: block;
 }
 
 /* ===== PORTFOLIO ===== */
