@@ -1,3 +1,4 @@
+from django.http import request
 from django.shortcuts import redirect
 from django.shortcuts import render
 from django.utils import timezone
@@ -22,9 +23,9 @@ def base(request):
     post = Post
     return render(request, 'blog/base.html', {'post': post})
 
-def about(request):
+def bio(request):
     post = Post
-    return render(request, 'blog/about.html', {'post': post})
+    return render(request, 'blog/bio.html', {'post': post})
 
 def cv(request):
     post = Post
@@ -37,4 +38,8 @@ def portfolio(request):
 def contact(request):
     post = Post
     return render(request, 'blog/contact.html', {'post': post})
+
+def error_404(request, exception):
+    return render(request, '404.html')
+
 

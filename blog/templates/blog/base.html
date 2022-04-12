@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
@@ -14,7 +15,7 @@
         <!--===== BOX ICONS =====-->
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Chey Fair</title>
+        <title>Cheyánne Fairclough</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -29,7 +30,7 @@
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list">
                             <li class="nav__item"><a href="{% url 'base' %} " class="nav__link active">Home</a></li>
-                            <li class="nav__item"><a href="{% url 'about' %}" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="{% url 'bio' %}" class="nav__link">About</a></li>
                             <li class="nav__item"><a href="{% url 'skills' %}" class="nav__link">Skills</a></li>
                             <li class="nav__item"><a href="{% url 'portfolio' %}" class="nav__link">Portfolio</a></li>
                             <li class="nav__item"><a href="{% url 'contact' %}" class="nav__link">Contact</a></li>

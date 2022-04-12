@@ -149,6 +149,7 @@ img {
 
 .section__title {
     text-align: center;
+    font-size: var(--h2-font-size);
 }
 
 .section_skills {
@@ -263,15 +264,25 @@ img {
     cursor: pointer;
 }
 
-/*Active menu*/
-.active::after {
+.nav__link::after {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 0;
     height: 0.18rem;
     left: 0;
     top: 2rem;
     background-color: var(--first-color);
+    transition: 0.3s;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+
+}
+
+/*Active menu*/
+.nav__link:active {
+    width: 100%;
 }
 
 /*=== Show menu ===*/
@@ -632,6 +643,10 @@ img {
     font-size: var(--normal-font-size);
     cursor: pointer;
     margin-left: auto;
+}
+
+.contact__phone {
+    color: #000;
 }
 
 /* ===== FOOTER ===== */
