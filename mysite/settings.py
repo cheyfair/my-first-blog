@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qn0$&=d-fm==n7&*#s6i0s27o&y8hf34z8t_8zh7@!74&%u0mr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.cheyfair.com', 'cheyfair.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.cheyfair.com']
 
 
 # Application definition
@@ -124,19 +124,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# HTTPS settings
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
-
-# HSTS settings
-SECURE_HSTS_SECONDS = 31536000
-SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-
-# Security settings
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_BROWSER_XSS_FILTER = True
-X_FRAME_OPTIONS = 'DENY'
 
