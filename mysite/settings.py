@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qn0$&=d-fm==n7&*#s6i0s27o&y8hf34z8t_8zh7@!74&%u0mr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'www.cheyfair.com', 'cheyfair.com', "cheyfair.pythonanywhere.com"]
 

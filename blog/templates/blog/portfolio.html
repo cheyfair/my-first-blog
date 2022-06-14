@@ -4,52 +4,20 @@
 
 {% block content %}
 
-    <section class="portfolio section" id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
-        <span class="section__subtitle">Most recent work</span>
-
-        <div class="portfolio__container bd-grid">
-            <div>
-                <!--=========== PORTFOLIO 1 ===========-->
-                <div class="portfolio__content grid">
-                    <img src="{% static 'assets/demo1.jpg' %}" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Eccomerce Store</h3>
-                        <p class="portfolio__description">Lorem ipsum dolor
-                            sit amet consectetur, adipisicing elit. Qui, dolore.</p>
-                        <a href="https://www.newlandcosmetics.com/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                        </a>
-                    </div>
+    <section>
+        <div class="row no-gutters">
+            <div class="col-md-6 no-gutters">
+                <div class="leftside d-flex justify-content-center align-items-center">
+                    <h2 class="portfolio-title">Port folio.</h2>
                 </div>
-
-                <!--=========== PORTFOLIO 2 ===========-->
-                <div class="portfolio__content grid">
-                    <img src="{% static 'assets/demo2.jpg' %}" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Brand Design</h3>
-                        <p class="portfolio__description">Lorem ipsum dolor
-                            sit amet consectetur, adipisicing elit. Qui, dolore.</p>
-                        <a href="https://www.avieha.com/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                        </a>
-                    </div>
-                </div>
-
-                <!--=========== PORTFOLIO 3 ===========-->
-                <div class="portfolio__content grid">
-                    <img src="{% static 'assets/demo3.jpg' %}" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Personal Blog</h3>
-                        <p class="portfolio__description">Lorem ipsum dolor
-                            sit amet consectetur, adipisicing elit. Qui, dolore.</p>
-                        <a href="{% url 'post_list' %}" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-6 no no-gutters">
+                <div class="rightside">
+                    <h3 class="project-title">Data Engineering</h3>
+                    <p class="project-description">Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Velit dolore, culpa amet aperiam cumque iusto, cum 
+                        minus quis excepturi doloribus fugit corporis similique dolor deleniti 
+                        omnis accusamus necessitatibus mollitia tempora!</p>
                 </div>
             </div>
         </div>

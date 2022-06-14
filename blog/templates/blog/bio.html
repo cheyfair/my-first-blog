@@ -4,47 +4,22 @@
 
 {% block content %}
 
-    <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-        
-        <div class="about__container bd-grid">
-            
-            <div>
-                <h4 class="about__subtitle">Cheyánne Fairclough</h4>
-                <span class="section__subtitle">My introduction</span>
-                
-                <div class="about__img">
-                    <img src="{% static 'images/self.jpg' %}" alt="Photo of Cheyánne Fairclough">
-                </div>
-                
-                <div class="about__data">
-                    <p class="about__description">I'm Cheyánne, a Junior Data
-                        Engineer from London. Up until April 2022, all my technical
-                        skills were self taught, however, I am now attending a data
-                        engineering bootcamp to further enhance my knowledge.
-                    </p>
-                    
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Months <br> experience</span>
-                        </div>
-                        
-                        <div>
-                            <span class="about__info-title">03</span>
-                            <span class="about__info-name">Completed <br> projects</span>
-                        </div>
-                        
-                        <div>
-                            <span class="about__info-title">02</span>
-                            <span class="about__info-name">Companies <br> worked</span>
-                        </div>
-                    </div>
+    <section>
+        <div class="row no-gutters">
+            <div class="col-md-6 no-gutters">
+                <div class="leftside d-flex justify-content-center align-items-center">
+                    <img src="{% static 'images/cf.png' %}" alt="Picture of Chey Fair">
                 </div>
             </div>
-            
-            <div class="about__buttons">
-                <a download="CheyCV" href="{% static 'assets/CheyCV.pdf' %}" class="button button--flex">Download CV</a>
+            <div class="col-md-6 no no-gutters">
+                <div class="rightside bio">
+                    <h2 class="bio-title">Cheyánne Fairclough</h2>
+                    <h3 class="bio-subtitle">Who am I?</h3>
+                    <p class="bio-description">Hi! I'm a Junior Data Engineer from London. 
+                        Up until April this year, all my technical skills were self taught, 
+                        however, I'm now attending a data engineering bootcamp to further 
+                        enhance my knowledge and kickstart my career in tech.</p>
+                </div>
             </div>
         </div>
     </section>

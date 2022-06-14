@@ -1,4 +1,4 @@
-from django.http import request
+from django.http import HttpResponseNotFound, request
 from django.shortcuts import redirect
 from django.shortcuts import render
 from django.utils import timezone
@@ -40,6 +40,6 @@ def contact(request):
     return render(request, 'blog/contact.html', {'post': post})
 
 def error_404(request, exception):
-    return render(request, '404.html')
+    return render(HttpResponseNotFound, 'blog/404.html')
 
 

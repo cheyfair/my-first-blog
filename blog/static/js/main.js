@@ -1,4 +1,4 @@
-/*===== MENU SHOW =====*/
+/* Menu show */
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -12,7 +12,7 @@ const showMenu = (toggleId, navId) => {
 
 showMenu('nav-toggle', 'nav-menu')
 
-/*===== ACTIVE AND REMOVE MENU =====*/
+/* Active and remove menu */
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
@@ -27,7 +27,7 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+/* Scroll reveal animation */
 const sr = ScrollReveal ({
     origin: 'top',
     distance: '80px',
@@ -35,7 +35,7 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-/*SCROLL HOME*/
+/*Scroll Home*/
 sr.reveal('.home__title', {})
 sr.reveal('.home__subtitle', {})
 sr.reveal('.home__description', {})
@@ -44,9 +44,9 @@ sr.reveal('.button', {delay: 200})
 sr.reveal('.home__img', {delay: 400})
 sr.reveal('.home__social-icon', {interval: 200})
 
-/*SCROLL ABOUT*/
-/*SCROLL SKILLS*/
-/*ACCORDION SKILLS*/
+/*Scroll About*/
+/*Scroll Skills*/
+/*Accordion Skills*/
 var skillsHeader = document.getElementsByClassName('skills__header');
 var i;
 
