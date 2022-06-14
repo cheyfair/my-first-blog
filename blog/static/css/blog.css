@@ -638,13 +638,9 @@ img {
 }
 
 .back-home {
-    /* Layout */
-    top: 520px;
-    
     /* UI */
     font: normal normal bold 18px/27px var(--jo);
     color: var(--off-black);
-    text-align: inherit;
     text-decoration: underline;
     letter-spacing: 0.52px;
 }
