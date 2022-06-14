@@ -645,7 +645,7 @@ img {
     letter-spacing: 0.52px;
 }
 
-.back-home:hover {
+span a:hover {
     color: var(--off-black);
 }
 
